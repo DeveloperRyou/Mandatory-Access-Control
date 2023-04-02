@@ -1,0 +1,16 @@
+Name : Ryou Sungmin
+Student ID : 2018147553
+Description : 
+
+Program has structures which are t_mac.
+t_mac has information about uid, gid, document file name, data, user name, FILE pointer of policy, document file, log, operation type, access_type.
+
+After initiating t_mac, get uid, gid and user name by using getuid, getgid, getpwuid.
+The program parse argument and get filenames.
+And program parse mac.policy to get access_type (security clearance level of user).
+
+After get access_type, program start to check authority of file and decide ACCESS or NOT.
+If ACCESS allowed, program read or write file.
+
+All read/write opration ends, program drop privilege to safe excution.
+After drop privilege, program open log file and append log file.
